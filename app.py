@@ -26,9 +26,10 @@ import pickle
 # heart_disease_model_dt = pickle.load(open(heart_disease_model_dt_path, 'rb'))
 # heart_disease_model_xgb = pickle.load(open(heart_disease_model_xgb_path, 'rb'))
 
-heart_disease_model_lr = pickle.load(open('mount/src/heart_disease/models/logistic_model_pkl.pkl', 'rb'))
-heart_disease_model_dt = pickle.load(open('mount/src/heart_disease/models/DecisionTreeClassifier.pkl', 'rb'))
-heart_disease_model_xgb = pickle.load(open('mount/src/heart_disease/models/XGBoost.pkl', 'rb'))
+print('path',os.getcwd())
+heart_disease_model_lr = pickle.load(open('/mount/src/heart_disease/models/logistic_model_pkl.pkl', 'rb'))
+heart_disease_model_dt = pickle.load(open('/mount/src/heart_disease/models/DecisionTreeClassifier.pkl', 'rb'))
+heart_disease_model_xgb = pickle.load(open('/mount/src/heart_disease/models/XGBoost.pkl', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
