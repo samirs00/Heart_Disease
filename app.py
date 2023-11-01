@@ -15,10 +15,15 @@ import pickle
 # heart_disease_model_dt = pickle.load(open(location+'DecisionTreeClassifier.pkl', 'rb'))
 # heart_disease_model_xgb = pickle.load(open(location+'XGBoost.pkl', 'rb'))
 
+# Access the model files
+model_dir='/models'
+heart_disease_model_lr = os.path.join(model_dir, "logistic_model_pkl.pkl")
+heart_disease_model_dt = os.path.join(model_dir, "DecisionTreeClassifier.pkl")
+heart_disease_model_xgb = os.path.join(model_dir, "XGBoost.pkl")
 
-heart_disease_model_lr = pickle.load(open('/models/logistic_model_pkl.pkl', 'rb'))
-heart_disease_model_dt = pickle.load(open('/models/DecisionTreeClassifier.pkl', 'rb'))
-heart_disease_model_xgb = pickle.load(open('/models/XGBoost.pkl', 'rb'))
+# heart_disease_model_lr = pickle.load(open('/models/logistic_model_pkl.pkl', 'rb'))
+# heart_disease_model_dt = pickle.load(open('/models/DecisionTreeClassifier.pkl', 'rb'))
+# heart_disease_model_xgb = pickle.load(open('/models/XGBoost.pkl', 'rb'))
 
 
 # sidebar for navigation
