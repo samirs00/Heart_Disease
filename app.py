@@ -26,6 +26,7 @@ import pickle
 # heart_disease_model_xgb = pickle.load(open(heart_disease_model_xgb_path, 'rb'))
 
 print('path',os.getcwd())
+# Reading model files
 heart_disease_model_lr = pickle.load(open('/mount/src/heart_disease/models/logistic_model_pkl.pkl', 'rb'))
 heart_disease_model_dt = pickle.load(open('/mount/src/heart_disease/models/DecisionTreeClassifier.pkl', 'rb'))
 heart_disease_model_xgb = pickle.load(open('/mount/src/heart_disease/models/XGBoost.pkl', 'rb'))
@@ -54,6 +55,9 @@ if (selected == 'Project Contributors'):
     st.title("2. Sujit Date")
     st.title("3. Arpita Bhujade")
     # title = st.text_input('Project Contributors')
+
+if (selected == 'Exploratory Data Analysis'):
+    st.markdown("https://github.com/samirs00/Heart_Disease/blob/main/heart%20disease%20analysis.ipynb")
 
     # page title
 # Heart Disease Prediction Page
