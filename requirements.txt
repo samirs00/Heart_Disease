@@ -3,3 +3,4 @@ streamlit_option_menu
 numpy
 pandas
 scikit-learn==1.1.2
+xgboost
