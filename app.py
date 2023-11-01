@@ -8,6 +8,7 @@ import logging
 import os
 print(os.getcwd())
 import pickle
+from PIL import Image
 
 # Streamlit Local System
 # heart_disease_model_lr = pickle.load(open(location+'logistic_model_pkl.pkl', 'rb'))
@@ -31,6 +32,9 @@ heart_disease_model_lr = pickle.load(open('/mount/src/heart_disease/models/logis
 heart_disease_model_dt = pickle.load(open('/mount/src/heart_disease/models/DecisionTreeClassifier.pkl', 'rb'))
 heart_disease_model_xgb = pickle.load(open('/mount/src/heart_disease/models/XGBoost.pkl', 'rb'))
 
+
+image = Image.open('/mount/src/heart_disease/heart.jpg')
+
 # sidebar for navigation
 with st.sidebar:
     
@@ -38,7 +42,9 @@ with st.sidebar:
                           
                           ['About Project',
                            'Project Contributors',
-                           'Heart Disease Prediction'],
+                           'Exploratory Data Analysis',
+                           'Heart Disease Prediction'
+                            ],
                           icons=['activity','activity','heart'],
                           default_index=0)
     
@@ -48,7 +54,8 @@ if (selected == 'About Project'):
     # page title
     st.title('Heart Disease Prediction using Machine Learning')
     st.markdown('Aim of the project is to build a machine learning model capable of predicting wheather or not someone has heart disease based on their medical attributes.')
-
+    st.image(image, caption='')
+    
 
 if (selected == 'Project Contributors'):
     st.title("1. Samir Rathod")
