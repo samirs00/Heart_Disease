@@ -30,16 +30,17 @@ with st.sidebar:
     
  
 if (selected == 'About Project'):
-    st.text_input('Aim of the project is to build a machine learning model capable of predicting wheather or not someone has heart disease based on their medical attributes.')
     # page title
     st.title('Heart Disease Prediction using Machine Learning')
-    st.text_input('sahdhasdjasjdaldlksajdl')
+    st.markdown('Aim of the project is to build a machine learning model capable of predicting wheather or not someone has heart disease based on their medical attributes.')
+
 
 if (selected == 'Project Contributors'):
-    st.text_input("Samir Rathod")
-    st.text_input("Sujit Date")
-    st.text_input("Arpita Bhujade")
-        
+    st.title("1. Samir Rathod")
+    st.title("2. Sujit Date")
+    st.title("3. Arpita Bhujade")
+    # title = st.text_input('Project Contributors')
+
     # page title
 # Heart Disease Prediction Page
 if (selected == 'Heart Disease Prediction'):
