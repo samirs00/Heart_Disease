@@ -64,7 +64,7 @@ if (selected == 'Project Contributors'):
     # title = st.text_input('Project Contributors')
 
 if (selected == 'Exploratory Data Analysis'):
-    st.markdown("https://github.com/samirs00/Heart_Disease/blob/main/heart%20disease%20analysis.ipynb")
+    st.markdown("https://github.com/samirs00/Heart_Disease/blob/main/heart%20disease%20analysis.html")
 
     # page title
 # Heart Disease Prediction Page
