@@ -33,7 +33,7 @@ heart_disease_model_dt = pickle.load(open('/mount/src/heart_disease/models/Decis
 heart_disease_model_xgb = pickle.load(open('/mount/src/heart_disease/models/XGBoost.pkl', 'rb'))
 
 
-image = Image.open('/mount/src/heart_disease/heart.jpg')
+image = Image.open('/mount/src/heart_disease/Heart_Disease.jpeg')
 
 # sidebar for navigation
 with st.sidebar:
@@ -64,7 +64,7 @@ if (selected == 'Project Contributors'):
     # title = st.text_input('Project Contributors')
 
 if (selected == 'Exploratory Data Analysis'):
-    st.markdown("https://github.com/samirs00/Heart_Disease/blob/main/heart%20disease%20analysis.html")
+    st.markdown("https://github.com/samirs00/Heart_Disease/blob/main/heart%20disease%20analysis.ipynb")
 
     # page title
 # Heart Disease Prediction Page
