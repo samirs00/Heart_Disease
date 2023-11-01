@@ -7,13 +7,18 @@ import logging
 
 import os
 print(os.getcwd())
-location='/Users/dhanashreekarande/Desktop/SSIT Projects/Heart_Raisoni/Heart_Disease_Final_Module/models/'
+#location='/Users/dhanashreekarande/Desktop/SSIT Projects/Heart_Raisoni/Heart_Disease_Final_Module/models/'
 import pickle
 
 
-heart_disease_model_lr = pickle.load(open(location+'logistic_model_pkl.pkl', 'rb'))
-heart_disease_model_dt = pickle.load(open(location+'DecisionTreeClassifier.pkl', 'rb'))
-heart_disease_model_xgb = pickle.load(open(location+'XGBoost.pkl', 'rb'))
+# heart_disease_model_lr = pickle.load(open(location+'logistic_model_pkl.pkl', 'rb'))
+# heart_disease_model_dt = pickle.load(open(location+'DecisionTreeClassifier.pkl', 'rb'))
+# heart_disease_model_xgb = pickle.load(open(location+'XGBoost.pkl', 'rb'))
+
+
+heart_disease_model_lr = pickle.load(open('/models/logistic_model_pkl.pkl', 'rb'))
+heart_disease_model_dt = pickle.load(open('/models/DecisionTreeClassifier.pkl', 'rb'))
+heart_disease_model_xgb = pickle.load(open('/models/XGBoost.pkl', 'rb'))
 
 
 # sidebar for navigation
