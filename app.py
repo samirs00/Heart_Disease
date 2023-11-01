@@ -10,21 +10,21 @@ print(os.getcwd())
 #location='/Users/dhanashreekarande/Desktop/SSIT Projects/Heart_Raisoni/Heart_Disease_Final_Module/models/'
 import pickle
 
-
+# Streamlit Local System
 # heart_disease_model_lr = pickle.load(open(location+'logistic_model_pkl.pkl', 'rb'))
 # heart_disease_model_dt = pickle.load(open(location+'DecisionTreeClassifier.pkl', 'rb'))
 # heart_disease_model_xgb = pickle.load(open(location+'XGBoost.pkl', 'rb'))
 
+# Streamlit Cloud
 # Access the model files
 model_dir='/models'
-heart_disease_model_lr = os.path.join(model_dir, "logistic_model_pkl.pkl")
-heart_disease_model_dt = os.path.join(model_dir, "DecisionTreeClassifier.pkl")
-heart_disease_model_xgb = os.path.join(model_dir, "XGBoost.pkl")
+heart_disease_model_lr_path = os.path.join(model_dir, "logistic_model_pkl.pkl")
+heart_disease_model_dt_path = os.path.join(model_dir, "DecisionTreeClassifier.pkl")
+heart_disease_model_xgb_path = os.path.join(model_dir, "XGBoost.pkl")
 
-# heart_disease_model_lr = pickle.load(open('/models/logistic_model_pkl.pkl', 'rb'))
-# heart_disease_model_dt = pickle.load(open('/models/DecisionTreeClassifier.pkl', 'rb'))
-# heart_disease_model_xgb = pickle.load(open('/models/XGBoost.pkl', 'rb'))
-
+heart_disease_model_lr = pickle.load(open(heart_disease_model_lr_path, 'rb'))
+heart_disease_model_dt = pickle.load(open(heart_disease_model_dt_path, 'rb'))
+heart_disease_model_xgb = pickle.load(open(heart_disease_model_xgb_path, 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
