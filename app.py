@@ -7,7 +7,6 @@ import logging
 
 import os
 print(os.getcwd())
-#location='/Users/dhanashreekarande/Desktop/SSIT Projects/Heart_Raisoni/Heart_Disease_Final_Module/models/'
 import pickle
 
 # Streamlit Local System
