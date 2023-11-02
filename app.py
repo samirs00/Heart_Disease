@@ -79,7 +79,8 @@ if (selected == 'Heart Disease Prediction'):
         age = st.text_input('Age',value="37")
         age=int(age)
     with col2:
-        sex_value = st.text_input('Sex',value="Male")
+        sex_value= st.selectbox('Sex',value=['Male','Female'])
+        #sex_value = st.text_input('Sex',value="Male")
         if sex_value=='Male':
            sex=1
         else:
