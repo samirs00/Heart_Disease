@@ -81,8 +81,7 @@ if (selected == 'Heart Disease Prediction'):
     with col2:
         sex = st.text_input('Sex',value="Male")
         if value=='Male':
-           sex_value=1
-            sex=sex_value
+           sex=1
         else:
             sex=0
     with col3:
