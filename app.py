@@ -79,8 +79,8 @@ if (selected == 'Heart Disease Prediction'):
         age = st.text_input('Age',value="37")
         age=int(age)
     with col2:
-        sex = st.text_input('Sex',value="Male")
-        if value=='Male':
+        sex_value = st.text_input('Sex',value="Male")
+        if sex_value=='Male':
            sex=1
         else:
             sex=0
