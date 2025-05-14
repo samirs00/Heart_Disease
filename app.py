@@ -61,6 +61,7 @@ if (selected == 'Project Contributors'):
     st.title("1. Samir Rathod")
     st.title("2. Sujit Date")
     st.title("3. Arpita Bhujade")
+    st.title("4. Shubham Rathod")
     # title = st.text_input('Project Contributors')
 
 if (selected == 'Exploratory Data Analysis'):
